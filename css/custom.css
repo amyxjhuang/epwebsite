@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
 .navbar {
   margin-bottom: 0;
 }
@@ -26,10 +28,21 @@
 body {
   background: #3e4649;
   color: #f7f7f7;
-  font-family: 'Montserrat', sans-serif !important;
+  body {
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.5;
+      color: #323232;
+      font-size: 15px;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+  }
 }
 h1,
 h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+
   font-weight: bold;
 }
 p {
