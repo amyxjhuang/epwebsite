@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic);
+
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-inverse {
+  background: #ddb100 !important;
+  border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+  color: ##ddb100 !important;
+  font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover {
+  background: #27a967!;
+}
+.dropdown-menu {
+  background: #A2321A;
+  border-radius: 0;
+  border: 0;
+}
+.dropdown-menu li a {
+  padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+  background: #ddb100;
+}
+body {
+  background: #3e4649;
+  color: #f7f7f7;
+  body {
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.5;
+      color: #323232;
+      font-size: 15px;
+      font-weight: 400;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+      -moz-font-smoothing: antialiased;
+  }
+}
+h1,
+h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+
+  font-weight: bold;
+}
+p {
+  font-size: 16px;
+  color: black;
+}
+.jumbotron {
+  background: #86200A   !important;
+  color: white;
+  text-align: center;
+}
+.jumbotron p {
+  color: #605e5c;
+  font-size: 26px; */
+ }
+ .btn-primary {
+  color: #fff;
+  background-color: transparent !important;
+  border-color: white !important;
+  margin-bottom: 5px;
+}
+.btn-primary:hover {
+  color: black;
+  background-color: white;
+  border-color: white;
+}
