@@ -25,19 +25,34 @@
 .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
   background: #ddb100;
 }
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    /* border: 20px solid rgba(0, 0, 0, 0.1); */
+    background-color: rgba(255, 255, 255, 0.90);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.team-member:hover .team-hover .desk {
+    top: 35%;
+}
 body {
   background: #3e4649;
   color: #f7f7f7;
-  body {
-      font-family: 'Source Sans Pro', sans-serif;
-      line-height: 1.5;
-      color: #323232;
-      font-size: 15px;
-      font-weight: 400;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-      -moz-font-smoothing: antialiased;
-  }
+  font-family: 'Source Sans Pro', sans-serif !important; 
+  line-height: 1.5;
+  color: #323232;
+  font-size: 15px;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+
 }
 h1,
 h2 {
@@ -55,7 +70,8 @@ p {
   text-align: center;
 }
 .jumbotron p {
-  color: #605e5c;
+  color: white !important;
+  font-color: white;
   font-size: 26px; */
  }
  .btn-primary {
