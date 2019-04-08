@@ -69,3 +69,7 @@ p {
   background-color: white;
   border-color: white;
 }
+
+.row {
+  border-spacing: 0 5px;
+}
