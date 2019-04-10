@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/custom.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="pictures/logo.png"/>
+  <link
+    href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+    rel="stylesheet"
+    type="text/css"
+  />
+
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chi Engineering Project</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <!-- Optional Bootstrap theme -->
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- ****************NAVIGATION!!!!!!!!!*****************-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<a class="navbar-brand" href="index.html"><img src="pictures/logo.png" height= 50> Chi Class</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="housing.html">Housing Unit<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="electrical.html">Electrical<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="mechanical.html">Mechanical<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="process.html">Process<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item active">
+      <a class="nav-link" href="about.html">About<span class="sr-only">(current)</span></a>
+    </li>
+
+  </ul>
+  <!-- <form class="form-inline my-2 my-lg-0">
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  </form> -->
+</div>
+<div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Chi Class Engineering Project</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- ****************NAVIGATION!!!!!!!!!*****************-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<div class="jumbotron">
+<div class="container">
+<h1 style="text-shadow: 2px 2px black;"><b>Electrical Components</b></h1> <br>
+</div></div>
+<div class="container">
+
+<h2> Pressure-Detecting Doormat</h2>
+<p> When stepped on, the doormat sends a signal through the Raspberry Pi to
+  trigger the rolling fabric blinds of the key rack. The doormat was built
+  according to the “button” method, which is used to detect pressure. It is
+  composed of two sheets of aluminum foil tightly attached to two firm pieces
+  of board with a 1-inch spacer in between. The doormat operates like a switch
+  circuit: when the sheets of aluminum foil make contact due to pressure, the switch
+  closes, thus closing the circuit. The current is then able to run through the system
+  to the Raspberry Pi, and a step on the doormat is detected.
+
+  <br> <br>
+  <b> Trigger weight: >5 lbs </b><br><center>
+  <img src="pictures/doormat.png" height=500></center><br>
+  Materials:
+  <li> Cardboard </li>
+  <li> Vinyl </li>
+  <li> Aluminum foil </li>
+  <li> 22-Gauge Wire </li>
+  <li> Felt cover </li></p>
+<br> <br> <h2> Key Dishes</h2>
+<p>The main component of the key dish is the force sensitive resistors.
+  These require pressure to be applied in order to lower the resistance.
+  The circuit is in effect a voltage divider, so by lowering the resistance
+  of the FSR and reaching the threshold voltage of 1.3V makes the pin detect
+  the presence of a key. The 3D-printed frustum shaped key dish and square trays
+  act to contain the keys, so keys stay in the designated areas and on the
+  force sensitive resistors.
+  <br> <br>
+  <b> Trigger weight: >30g </b><br><center>
+  <img src="pictures/keys.png" height=400></center><br>
+
+  Materials:
+  <li>3D-printed frustum key dishes</li>
+  <li>3D-printed square trays</li>
+  <li>Square force-sensitive resistors </li>
+  <li>20K Ω Resistors</li>
+  <li>22-gauge wire</li></p><br><br>
+  </p>
+  <h2> Raspberry Pi</h2>
+  <p>The Raspberry Pi functions to receive inputs from the pressure-detecting doormat
+    and key dishes. It communicates with the web server to update who is home when
+    the key dishes contain keys. Additionally, it connects with the motor controller
+     to power the motors with larger current and higher voltage than the standard
+     value of the 3.3V supplied by the Raspberry Pi.
+    <br> <br>
+    <center><img src="pictures/circuits.png" height=400></center><br>
+    </p>
+
+
+
+
+
+</div>
+</html>
