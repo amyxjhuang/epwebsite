@@ -72,25 +72,65 @@
 <script src="js/bootstrap.min.js"></script>
 <div class="jumbotron">
 <div class="container">
-<h1 style="text-shadow: 2px 2px black;"><b>Housing Unit</b></h1> <br>
-
+<h1 style="text-shadow: 2px 2px black;"><b>Electrical Components</b></h1> <br>
 </div></div>
-<div class="container"><center><h1>Physical Component Construction</h1></center><br>
-<p> Constructed with red oak wood, the unit is composed of
-  two shelves that hold a total of for key dishes. The back panel of the unit
-   houses the electrical circuit, including the Raspberry Pi.</p>
-   <div class="container">
-<li>Housing box dimensions: 11.75”x20”x12.5”</li>
-<li>Stands 5.25” off the base of housing box</li><br>
-<p>Materials</p>
-<li>Red oak wood (5.5” wide, 0.75” thick)</li>
-<li>Dark walnut varnish</li>
-<li>Polyurethane coating</li>
-<li>Wood and cabinet screws</li>
-<li>1.5” deck screws</li>
-<li>.5” phillip screws (to mount motors)</li><br><br>
-<center><img src="pictures/housingpic.png" height=400><img src="pictures/eptpt.png" height=400></center>
-</div>
+<div class="container">
 
-</div><br><br><br><br>
+<h2> Pressure-Detecting Doormat</h2>
+<p> When stepped on, the doormat sends a signal through the Raspberry Pi to
+  trigger the rolling fabric blinds of the key rack. The doormat was built
+  according to the “button” method, which is used to detect pressure. It is
+  composed of two sheets of aluminum foil tightly attached to two firm pieces
+  of board with a 1-inch spacer in between. The doormat operates like a switch
+  circuit: when the sheets of aluminum foil make contact due to pressure, the switch
+  closes, thus closing the circuit. The current is then able to run through the system
+  to the Raspberry Pi, and a step on the doormat is detected.
+
+  <br> <br>
+  <b> Trigger weight: >5 lbs </b><br><center>
+  <img src="pictures/doormat.png" height=500></center><br>
+  Materials:
+  <li> Cardboard </li>
+  <li> Vinyl </li>
+  <li> Aluminum foil </li>
+  <li> 22-Gauge Wire </li>
+  <li> Felt cover </li></p>
+<br> <br> <h2> Key Dishes</h2>
+<p>The main component of the key dish is the force sensitive resistors.
+  These require pressure to be applied in order to lower the resistance.
+  The circuit is in effect a voltage divider, so by lowering the resistance
+  of the FSR and reaching the threshold voltage of 1.3V makes the pin detect
+  the presence of a key. The 3D-printed frustum shaped key dish and square trays
+  act to contain the keys, so keys stay in the designated areas and on the
+  force sensitive resistors.
+  <br> <br>
+  <b> Trigger weight: >30g </b><br><center>
+  <img src="pictures/keys.png" height=400></center><br>
+
+  Materials:
+  <li>3D-printed frustum key dishes</li>
+  <li>3D-printed square trays</li>
+  <li>Square force-sensitive resistors </li>
+  <li>20K Ω Resistors</li>
+  <li>22-gauge wire</li></p><br><br>
+  </p>
+  <h2> Raspberry Pi</h2>
+  <p>The Raspberry Pi functions to receive inputs from the pressure-detecting doormat
+    and key dishes. It communicates with the web server to update who is home when
+    the key dishes contain keys. Additionally, it connects with the motor controller
+     to power the motors with larger current and higher voltage than the standard
+     value of the 3.3V.
+    <br> <br>
+    <center><img src="pictures/pi.png" height=400></center><br>
+    </p>
+<h2> Electical circuit</h2>
+  <br> <br>
+  <center><img src="pictures/circuit.png" height=400></center><br>
+
+
+
+
+
+
+</div>
 </html>
