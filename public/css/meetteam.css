@@ -129,3 +129,29 @@ body {
 .team-img {
     height : 100;
 }
+
+.navbar !important{
+  margin-bottom: 0;
+}
+.navbar-inverse !important{
+  background: #2e2f31;
+  border: 0;
+}
+.navbar-inverse .navbar-nav li a !important{
+  color: #f7f7f7;
+  font-size: 16px;
+}
+.navbar-inverse .navbar-nav li a:hover !important{
+  background: #27a967;
+}
+.dropdown-menu !important{
+  background: #A2321A;
+  border-radius: 0;
+  border: 0;
+}
+.dropdown-menu li a !important{
+  padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover !important{
+  background: #2c463c;
+}
